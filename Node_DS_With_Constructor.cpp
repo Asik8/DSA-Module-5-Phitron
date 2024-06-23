@@ -28,8 +28,12 @@ class Node // initialize Node
 int main() {
     ios::sync_with_stdio(false);
     cin.tie(NULL);
-    Node a(5);
+    Node a(5);      // Initializing node data
+    Node b(10);
+    a.next = &b;    // Inserting next node address
+
     cout<<a.data<<endl;
+    cout<<a.next->data<<endl;
 
     return 0;
 }
